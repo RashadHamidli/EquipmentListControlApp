@@ -29,7 +29,7 @@ public class UserController extends HttpServlet {
         user.setEmail(email);
 
         userDao.updateUser(user);
-        resp.sendRedirect("index.jsp");
+        resp.sendRedirect("user.jsp");
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
