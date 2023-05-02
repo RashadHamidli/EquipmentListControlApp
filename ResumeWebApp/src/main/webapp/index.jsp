@@ -66,8 +66,7 @@
     <p>sagda acilmis bolme</p>
 </aside>
 <p>
-    <img src="	https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230305131111/Java-programming.png"
-         alt="profile photo" width="800" height="auto">
+          alt="profile photo" width="800" height="auto">
     <br>
 <hr>
 </p>

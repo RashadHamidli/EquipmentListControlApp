@@ -2,6 +2,8 @@
 <%@ page import="com.company.main.Context" %>
 <%@ page import="com.company.entity.User" %>
 <%@ page import="java.util.List" %>
+<%@ page import="java.sql.Date" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -13,12 +15,11 @@
     UserDAOinter userDao = Context.instanceUserDao();
     String name = request.getParameter("name");
     String surname = request.getParameter("surname");
-    String nationalityIdStr = request.getParameter("nid");
-    Integer nationalityId = null;
-    if (nationalityId != null && !nationalityIdStr.trim().isEmpty()) {
-        nationalityId = Integer.parseInt(nationalityIdStr);
-    }
-    List<User> list = userDao.getAll(name, surname, nationalityId);
+    String email = request.getParameter("email");
+    String phone = request.getParameter("phone");
+    String address = request.getParameter("address");
+
+    List<User> list = userDao.getAll(name, surname, email, phone, address);
 %>
 
 <div>
@@ -28,6 +29,18 @@
         <br/>
         <label for="surname">surname</label>
         <input type="text" , id="surname" , name="surname" , value="">
+        <br/>
+        <label for="email">email</label>
+        <input type="text" , id="email" , name="email" , value="">
+        <br/>
+        <label for="phone">phone</label>
+        <input type="text" , id="phone" , name="phone" , value="">
+        <br/>
+        <label for="address">address</label>
+        <input type="text" , id="address" , name="address" , value="">
+        <br/>
+        <label for="birthday">birthdate</label>
+        <input type="date" , id="birthday" , name="birthday" , value="">
         <input type="submit" , name="search" , value="Search">
     </form>
 
@@ -39,7 +52,9 @@
         <tr>
             <th>Name</th>
             <th>Surname</th>
-            <th>Nationality</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
         </tr>
         </thead>
         <tbody>
@@ -51,7 +66,11 @@
             </td>
             <td><%=u.getSurname()%>
             </td>
-            <td><%=u.getNationality().getName() == null ? "N/A" : u.getNationality().getName()%>
+            <td><%=u.getEmail()%>
+            </td>
+            <td><%=u.getPhone()%>
+            </td>
+            <td><%=u.getAddress()%>
             </td>
         </tr>
         <%}%>
