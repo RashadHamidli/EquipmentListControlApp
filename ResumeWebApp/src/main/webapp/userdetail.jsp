@@ -13,15 +13,25 @@
 %>
 <div>
   <form action="userdetail" method="post">
+    <input type="hidden", name="action", value="update">
     <input type="hidden", name="id", value="<%=user.getId()%>">
-    <label>name:</label>
+    <label>Name:</label>
     <input type="text", name="name", value="<%=user.getName()%>">
     <br/>
-    <label>surname:</label>
+    <label>Surname:</label>
     <input type="text", name="surname", value="<%=user.getSurname()%>">
     <br/>
-    <label>email:</label>
+    <label>Email:</label>
     <input type="text", name="email", value="<%=user.getEmail()%>">
+    <br/>
+    <label>Phone:</label>
+    <input type="text", name="phone", value="<%=user.getPhone()%>">
+    <br/>
+    <label>Address:</label>
+    <input type="text", name="address", value="<%=user.getAddress()%>">
+    <br/>
+    <label>Profile Description:</label>
+    <input type="text", name="profile_description", value="<%=user.getProfileDescription()%>">
     <input type="submit", name="save", value="Save">
   </form>
 </div>

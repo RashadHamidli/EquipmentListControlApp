@@ -11,6 +11,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3077c7ca85.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="users.js"></script>
 </head>
 <body>
 
@@ -26,7 +42,7 @@
 %>
 
 <div>
-    <form action="users.jsp" , method="get" style="margin: 1% 10% 1% 10%;" row>
+    <form action="users" , method="get" style="margin: 1% 10% 1% 10%;" row>
         <div class="row">
             <div class="form-group">
                 <div class="col-sm-4">
@@ -59,6 +75,7 @@
             <th>Email</th>
             <th>Phone</th>
             <th>Address</th>
+            <th>Description</th>
         </tr>
         </thead>
         <tbody>
@@ -76,14 +93,15 @@
             </td>
             <td><%=u.getAddress()%>
             </td>
+            <td><%=u.getProfileDescription()%>
+            </td>
             <td>
-                <form action="userdetail" method="post">
-                    <input type="hidden" , name="id" , value="<%=u.getId()%>">
-                    <input type="hidden" , name="action" , value="delete">
-                    <button class="btn btn-danger" type="submit" , value="delete">
-                        <i class="fa-sharp fa-solid fa-trash"></i>
-                    </button>
-                </form>
+                <input type="hidden" , name="id" , value="<%=u.getId()%>">
+                <input type="hidden" , name="action" , value="delete">
+                <button class="btn btn-danger" type="submit" , value="delete" data-toggle="modal"
+                        data-target="#exampleModal" onclick="setIdForDelete(<%=u.getId()%>)">
+                    <i class="fa-sharp fa-solid fa-trash"></i>
+                </button>
             </td>
             <td>
                 <form action="userdetail" method="get">
@@ -96,6 +114,31 @@
             </td>
         </tr>
         <%}%>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure?
+                    </div>
+                    <div class="modal-footer">
+                        <form action="userdetail" method="POST">
+                            <input type="hidden" name="id" value="" id="idForDelete"/>
+                            <input type="hidden" name="action" value="delete"/>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <input type="submit" class="btn btn-danger" value="Delete"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         </tbody>
     </table>
 </div>

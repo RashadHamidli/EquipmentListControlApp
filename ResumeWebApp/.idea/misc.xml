@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../ResumeDBApp/ResumeDBApp/pom.xml" />
+        <option value="$PROJECT_DIR$/../ResumeDBApp/pom.xml" />
+        <option value="$PROJECT_DIR$/../../ResumeDBApp/ResumeDBApp/pom.xml" />
       </list>
     </option>
   </component>

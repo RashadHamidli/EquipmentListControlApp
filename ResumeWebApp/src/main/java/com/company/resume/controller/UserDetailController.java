@@ -43,9 +43,18 @@ public class UserDetailController extends HttpServlet {
         if (action.equals("update")) {
             String name = request.getParameter("name");
             String surname = request.getParameter("surname");
+            String email = request.getParameter("email");
+            String phone = request.getParameter("phone");
+            String address = request.getParameter("address");
+            String profileDesc = request.getParameter("profile_description");
             User user = userDao.getById(id);
             user.setName(name);
             user.setSurname(surname);
+            user.setEmail(email);
+            user.setPhone(phone);
+            user.setAddress(address);
+            user.setProfileDescription(profileDesc);
+
             userDao.updateUser(user);
         } else if (action.equals("delete")) {
             userDao.removeUser(id);
