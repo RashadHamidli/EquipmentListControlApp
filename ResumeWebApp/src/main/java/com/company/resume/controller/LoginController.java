@@ -36,7 +36,6 @@ public class LoginController extends HttpServlet {
         try {
             String email = request.getParameter("email");
 
-            System.out.println("email="+email);
             String password = request.getParameter("password");
             User user = userDao.findByEmail(email);
 

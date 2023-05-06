@@ -41,6 +41,31 @@
     List<User> list = userDao.getAll(name, surname, email, phone, address);
 %>
 
+<ul class="nav nav-pills nav-fill">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Əsas səhifə</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Haqqımızda</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Məhsullar</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Xidmətlər</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Bloq</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Əlaqə</a>
+    </li>
+</ul>
+<div style="text-align: right">
+    <form action="logout" method="get">
+        <input type="submit" class="btn btn-primary" name="action" value="Logout"/>
+    </form>
+</div>
 <div>
     <form action="users" , method="get" style="margin: 1% 10% 1% 10%;" row>
         <div class="row">
@@ -60,6 +85,7 @@
                     <input class="form-control" type="text" , id="address" , name="address" , value="">
                     <input class="btn btn-primary" type="submit" , name="search" , value="Search"
                            style="margin: 2% 0% 2% 0%">
+
                 </div>
             </div>
         </div>
