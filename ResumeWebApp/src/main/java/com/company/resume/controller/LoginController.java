@@ -13,11 +13,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 
 import java.io.IOException;
-
-/**
- *
- * @author sarkhanrasullu
- */
 @WebServlet(name = "LoginController", urlPatterns = {"/login"})
 public class LoginController extends HttpServlet {
 

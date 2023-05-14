@@ -1,8 +1,5 @@
 package com.company.resume.controller;
 
-import at.favre.lib.crypto.bcrypt.BCrypt;
-import com.company.dao.inter.UserDAOinter;
-import com.company.main.Context;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
