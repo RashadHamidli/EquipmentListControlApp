@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="236ead56-a60d-4d48-b91c-674362d64651" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/katv1/controller/EquipmentRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/katv1/controller/EquipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/katv1/controller/EquipmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/equipment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/equipment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/katv1/controller/EquipmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/katv1/controller/EquipmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/equipment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/equipment.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Launcher.executor": "Run",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/rashad/IdeaProjects/EquipmentListControlApp",
@@ -84,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708272310101</updated>
-      <workItem from="1708272311184" duration="1554000" />
+      <workItem from="1708272311184" duration="2457000" />
     </task>
     <servers />
   </component>
