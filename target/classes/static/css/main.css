@@ -24,11 +24,20 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-.centered-content {
+.centered-content-main {
     color: red;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh; /* 100% viewport height */
+    height: 100vh;
+}
+
+.main-header {
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3855E1;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
 }
