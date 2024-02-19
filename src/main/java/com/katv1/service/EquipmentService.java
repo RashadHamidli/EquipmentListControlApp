@@ -2,6 +2,8 @@ package com.katv1.service;
 
 import com.katv1.entity.Equipment;
 import com.katv1.repository.EquipmentRepository;
+import jakarta.transaction.Transactional;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -18,10 +20,15 @@ public class EquipmentService {
     }
 
     public List<Equipment> findAllEquipment() {
-        return equipmentRepository.findAll();
+        return equipmentRepository.findAll(Sort.by(Sort.Direction.ASC, "street"));
     }
 
     public List<Equipment> findOneEquipmentByAddress(String street, String build) {
-        return equipmentRepository.findByStreetAndBuild(street, build);
+        return equipmentRepository.findByStreetIgnoreCaseAndBuildIgnoreCase(street, build);
+    }
+
+    @Transactional
+    public Equipment addEquipment(Equipment equipment) {
+        return equipmentRepository.save(equipment);
     }
 }

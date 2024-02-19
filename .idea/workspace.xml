@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="236ead56-a60d-4d48-b91c-674362d64651" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/katv1/controller/AddEquipmentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/katv1/controller/EquipmentFindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/katv1/controller/EquipmentFindController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/katv1/repository/EquipmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/katv1/repository/EquipmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/katv1/service/EquipmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/katv1/service/EquipmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/equipment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/equipment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/equipment_find.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/equipment_find.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/katv1/repository/EquipmentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/katv1/repository/EquipmentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/katv1/service/EquipmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/katv1/service/EquipmentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/equipment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/equipment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/equipment_find.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/equipment_find.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +66,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -91,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708272310101</updated>
-      <workItem from="1708272311184" duration="7084000" />
+      <workItem from="1708272311184" duration="16352000" />
     </task>
     <servers />
   </component>
