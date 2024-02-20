@@ -9,4 +9,8 @@ import java.util.List;
 @Repository
 public interface EquipmentRepository extends JpaRepository<Equipment, Integer> {
     List<Equipment> findByStreetIgnoreCaseAndBuildIgnoreCase(String street, String build);
+
+    List<Equipment> findByWattIsNotNull();
+
+    List<Equipment> findByMedFalse();
 }

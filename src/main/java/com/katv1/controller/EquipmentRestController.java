@@ -24,4 +24,11 @@ public class EquipmentRestController {
         return equipmentService.findOneEquipmentByAddress(street, build);
     }
 
+    public List<Equipment> getAllEquipmentNotNullWatt(){
+        return equipmentService.getAllEquipmentNotNullWatt();
+    }
+    public List<Equipment> getAllEquipmentMedFalse(){
+        return equipmentService.getAllEquipmentMedFalse();
+    }
+
 }

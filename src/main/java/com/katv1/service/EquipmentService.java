@@ -31,4 +31,12 @@ public class EquipmentService {
     public Equipment addEquipment(Equipment equipment) {
         return equipmentRepository.save(equipment);
     }
+
+    public List<Equipment> getAllEquipmentNotNullWatt() {
+        return equipmentRepository.findByWattIsNotNull();
+    }
+
+    public List<Equipment> getAllEquipmentMedFalse() {
+        return equipmentRepository.findByMedFalse();
+    }
 }

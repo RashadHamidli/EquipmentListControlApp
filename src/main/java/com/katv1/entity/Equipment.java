@@ -23,5 +23,10 @@ public class Equipment {
     private boolean fusebox;
     private Double watt;
 
+    @Override
+    public String toString() {
+        return String.format("%d) küçə: %s, bina: %s, blok: %d, mərtəbə: %d, switch: %d, switch akkum: %d, tv: %d, med: %b, avt: %b, watt: %.2f",
+                id, street, build, block, floor, switchSimple, switchAccum, Tv, med, fusebox, watt);
+    }
 
 }
