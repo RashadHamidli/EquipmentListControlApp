@@ -24,7 +24,7 @@ public class EquipmentService {
     }
 
     public List<Equipment> findOneEquipmentByAddress(String street, String build) {
-        return equipmentRepository.findByStreetIgnoreCaseAndBuildIgnoreCase(street, build);
+        return equipmentRepository.findByStreetContainingAndIgnoreCaseAndBuildIgnoreCase(street, build);
     }
 
     @Transactional
@@ -38,5 +38,13 @@ public class EquipmentService {
 
     public List<Equipment> getAllEquipmentMedFalse() {
         return equipmentRepository.findByMedFalse();
+    }
+
+    public List<Equipment> getAllEquipmentIsNullWatt() {
+        return equipmentRepository.findByWattIsNull(Sort.by("street"));
+    }
+
+    public List<Equipment> findAllEquipmentContaining(String street) {
+        return equipmentRepository.findByStreetContainingIgnoreCase(street);
     }
 }
