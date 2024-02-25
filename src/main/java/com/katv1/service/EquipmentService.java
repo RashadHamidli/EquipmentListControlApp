@@ -24,7 +24,7 @@ public class EquipmentService {
     }
 
     public List<Equipment> findOneEquipmentByAddress(String street, String build) {
-        return equipmentRepository.findByStreetContainingAndIgnoreCaseAndBuildIgnoreCase(street, build);
+        return equipmentRepository.findByStreetAndBuildIgnoreCase(street, build);
     }
 
     @Transactional

@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="236ead56-a60d-4d48-b91c-674362d64651" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/katv1/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/katv1/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/katv1/controller/EquipmentRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/katv1/controller/EquipmentRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/katv1/repository/EquipmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/katv1/repository/EquipmentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/katv1/service/EquipmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/katv1/service/EquipmentService.java" afterDir="false" />
     </list>
@@ -119,7 +117,8 @@
       <workItem from="1708319805285" duration="1114000" />
       <workItem from="1708413477861" duration="989000" />
       <workItem from="1708418527793" duration="1485000" />
-      <workItem from="1708420063247" duration="2193000" />
+      <workItem from="1708420063247" duration="3058000" />
+      <workItem from="1708870994790" duration="1405000" />
     </task>
     <servers />
   </component>
