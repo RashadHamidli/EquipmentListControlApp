@@ -1,13 +1,17 @@
 package com.katv1;
 
 import com.katv1.controller.EquipmentRestController;
+import com.katv1.entity.Equipment;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
+import org.springframework.context.annotation.Bean;
+
+import java.util.List;
 
 @SpringBootApplication(exclude = SecurityAutoConfiguration.class)
-public class Launcher implements CommandLineRunner {
+public class Launcher {
     private final EquipmentRestController equipmentController;
 
     public Launcher(EquipmentRestController equipmentController) {
@@ -18,8 +22,10 @@ public class Launcher implements CommandLineRunner {
         SpringApplication.run(Launcher.class, args);
     }
 
-    @Override
-    public void run(String... args) throws Exception {
-        equipmentController.findAllEquipmentContaining("yan").stream().forEach(System.out::println);
+    @Bean
+    public CommandLineRunner runner(EquipmentRestController equipmentController){
+        return args -> {
+            equipmentController.getAllEquipment().stream().forEach(System.out::println);
+        };
     }
 }

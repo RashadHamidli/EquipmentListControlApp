@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="236ead56-a60d-4d48-b91c-674362d64651" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/katv1/repository/EquipmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/katv1/repository/EquipmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/katv1/service/EquipmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/katv1/service/EquipmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/katv1/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/katv1/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +120,8 @@
       <workItem from="1708413477861" duration="989000" />
       <workItem from="1708418527793" duration="1485000" />
       <workItem from="1708420063247" duration="3058000" />
-      <workItem from="1708870994790" duration="1405000" />
+      <workItem from="1708870994790" duration="1710000" />
+      <workItem from="1708875753910" duration="2306000" />
     </task>
     <servers />
   </component>
